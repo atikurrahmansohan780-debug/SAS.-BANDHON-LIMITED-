@@ -1,0 +1,15 @@
+ফোন দিয়ে APK বানানোর নিয়ম (কম্পিউটার লাগবে না)
+
+১) GitHub অ্যাকাউন্ট খুলুন/লগইন করুন: https://github.com
+২) New repository তৈরি করুন। নাম দিন ArjanGuraMoslaApp এবং Public বা Private যেকোনোটি রাখুন।
+৩) এই ZIP Extract করুন।
+৪) GitHub repository-তে Add file > Upload files চাপুন।
+৫) ZIP Extract করা ফোল্ডারের ভেতরের সব ফাইল ও .github ফোল্ডারসহ আপলোড করে Commit changes দিন।
+৬) উপরের Actions ট্যাবে যান। Android APK Build workflow চলবে।
+৭) কাজ শেষ হলে সবুজ সফল চিহ্ন দেখাবে। workflow-তে ঢুকে নিচে Artifacts থেকে ArjanGuraMosla-APK ডাউনলোড করুন।
+৮) ZIP extract করে app-debug.apk ফাইলে চাপ দিয়ে Install করুন। ফোন চাইলে এই উৎস থেকে Install করার অনুমতি দিন।
+
+গুরুত্বপূর্ণ:
+- এটি debug APK; Play Store-এ প্রকাশের জন্য signed release APK নয়।
+- GitHub-এ .github ফোল্ডারটি অবশ্যই আপলোড করবেন।
+- অ্যাপের বর্তমান HTML ফিচারগুলো WebView-তে চলে; Android native feature-এর সব সুবিধা এতে নেই।
